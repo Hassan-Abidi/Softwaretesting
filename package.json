@@ -5,10 +5,26 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no tests are implemented yet \" && exit 1"
+    "test": "jest --coverage",
+    "coveralls": "cat ./coverage/lcov.info | coveralls"
   },
-  "author": "",
+  "author": "Hassan Abidi and Nukhba Shehzad",
   "license": "MIT",
-  "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "@babel/core": "^7.28.5",
+    "@babel/preset-env": "^7.28.5",
+    "coveralls": "^3.1.1",
+    "jest": "^30.2.0"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/*.js",
+      "!**/.internal/**"
+    ],
+    "coverageReporters": [
+      "text",
+      "lcov"
+    ]
+  }
 }
