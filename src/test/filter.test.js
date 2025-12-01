@@ -1,4 +1,4 @@
-import filter from "../src/filter.js";
+import filter from "../filter.js";
 
 describe("filter()", () => {
   test("keeps only numbers that match the condition", () => {

@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "jest --coverage",
+    "test": "jest",
     "test:coveralls": "jest --coverage && coveralls < coverage/lcov.info"
   },
   "author": "Hassan Abidi and Nukhba Shehzad",

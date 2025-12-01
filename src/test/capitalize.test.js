@@ -1,4 +1,4 @@
-import capitalize from "../src/capitalize.js";
+import capitalize from "../capitalize.js";
 
 describe("capitalize()", () => {
   test("turns an all-uppercase word into a proper capitalized one", () => {

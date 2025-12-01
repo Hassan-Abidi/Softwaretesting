@@ -1,4 +1,4 @@
-import toNumber from '../src/toNumber.js';
+import toNumber from '../toNumber.js';
 
 describe('toNumber()', () => {
   test('returns same value for number input', () => {

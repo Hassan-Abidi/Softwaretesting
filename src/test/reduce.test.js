@@ -1,4 +1,4 @@
-import reduce from "../src/reduce.js";
+import reduce from "../reduce.js";
 
 describe("reduce()", () => {
 

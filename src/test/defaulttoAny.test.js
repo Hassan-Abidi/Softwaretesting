@@ -1,4 +1,4 @@
-import defaultToAny from '../src/defaultToAny.js';
+import defaultToAny from '../defaultToAny.js';
 
 describe('defaultToAny()', () => {
   test('returns main value when it is valid', () => {

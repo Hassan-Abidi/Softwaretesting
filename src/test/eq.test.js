@@ -1,4 +1,4 @@
-import eq from "../src/eq.js";
+import eq from "../eq.js";
 
 describe("eq()", () => {
   test("returns true for the very same primitive values", () => {

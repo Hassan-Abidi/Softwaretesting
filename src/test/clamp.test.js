@@ -1,4 +1,4 @@
-import clamp from '../src/clamp.js';
+import clamp from '../clamp.js';
 
 describe('clamp()', () => {
   test('returns lower bound when number is smaller than range', () => {

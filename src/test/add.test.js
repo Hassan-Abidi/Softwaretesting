@@ -1,4 +1,4 @@
-import add from '../src/add.js'
+import add from '../add.js'
 
 test('adds two positive numbers', () => {
   expect(add(6, 4)).toBe(10)
