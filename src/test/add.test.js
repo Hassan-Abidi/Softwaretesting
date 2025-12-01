@@ -1,4 +1,4 @@
-import add from '../src/add.js';
+import add from '../add.js';
 
 describe('add()', () => {
   // 1–3: Basic arithmetic
