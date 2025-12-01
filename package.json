@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "jest",
-    "coveralls": "cat ./coverage/lcov.info | coveralls"
+    "test": "jest --coverage",
+    "test:coveralls": "jest --coverage && coveralls < coverage/lcov.info"
   },
   "author": "Hassan Abidi and Nukhba Shehzad",
   "license": "MIT",
