@@ -19,3 +19,22 @@ test('adds floating-point numbers', () => {
 test('adds number with zero', () => {
   expect(add(7, 0)).toBe(7)
 })
+
+describe('add() – undefined / null handling', () => {
+  test('treats undefined first argument as identity of second', () => {
+    expect(add(undefined, 5)).toBe(5)
+  })
+
+  test('treats undefined second argument as identity of first', () => {
+    expect(add(5, undefined)).toBe(5)
+  })
+
+  test('both arguments undefined return default 0', () => {
+    expect(add(undefined, undefined)).toBe(0)
+  })
+
+  test('treats null as 0', () => {
+    expect(add(null, 5)).toBe(5)
+    expect(add(5, null)).toBe(5)
+  })
+})

@@ -23,16 +23,16 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">85.71% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/7</span>
+                <span class='fraction'>6/7</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">82.35% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/17</span>
+                <span class='fraction'>14/17</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/6</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -101,22 +101,19 @@
 <a name='L36'></a><a href='#L36'>36</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -130,25 +127,28 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import root from './.internal/root.js'
 &nbsp;
 /** Detect free variable `exports`. */
-const freeExports = <span class="cstat-no" title="statement not covered" >typeof exports === 'object' &amp;&amp; exports !== null &amp;&amp; !exports.nodeType &amp;&amp; exports</span>
+const freeExports = typeof exports === 'object' &amp;&amp; exports !== null &amp;&amp; !exports.nodeType &amp;&amp; exports
 &nbsp;
 /** Detect free variable `module`. */
-const freeModule = <span class="cstat-no" title="statement not covered" >freeExports &amp;&amp; typeof module === 'object' &amp;&amp; module !== null &amp;&amp; !module.nodeType &amp;&amp; module</span>
+const freeModule = freeExports &amp;&amp; typeof module === 'object' &amp;&amp; module !== null &amp;&amp; !module.nodeType &amp;&amp; module
 &nbsp;
 /** Detect the popular CommonJS extension `module.exports`. */
-const moduleExports = <span class="cstat-no" title="statement not covered" >freeModule &amp;&amp; freeModule.exports === freeExports</span>
+const moduleExports = freeModule &amp;&amp; freeModule.exports === freeExports
 &nbsp;
 /** Built-in value references. */
-const Buffer = <span class="cstat-no" title="statement not covered" >moduleExports ? root.Buffer : undefined</span>
+const Buffer = moduleExports ? root.Buffer : <span class="branch-1 cbranch-no" title="branch not covered" >undefined</span>
 &nbsp;
 /* Built-in method references for those with the same name as other `lodash` methods. */
-const nativeIsBuffer = <span class="cstat-no" title="statement not covered" >Buffer ? Buffer.isBuffer : undefined</span>
+const nativeIsBuffer = Buffer ? Buffer.isBuffer : <span class="branch-1 cbranch-no" title="branch not covered" >undefined</span>
 &nbsp;
 /**
  * Checks if `value` is a buffer.
@@ -165,7 +165,7 @@ const nativeIsBuffer = <span class="cstat-no" title="statement not covered" >Buf
  * isBuffer(new Uint8Array(2))
  * // =&gt; false
  */
-const isBuffer = <span class="cstat-no" title="statement not covered" >nativeIsBuffer || (<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >false)</span></span>
+const isBuffer = nativeIsBuffer || (<span class="fstat-no" title="function not covered" ><span class="branch-1 cbranch-no" title="branch not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >false)</span></span>
 &nbsp;
 export default isBuffer
 &nbsp;</pre></td></tr></table></pre>
@@ -175,7 +175,7 @@ export default isBuffer
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-11-27T11:33:12.458Z
+                at 2025-12-01T14:58:26.563Z
             </div>
         <script src="../prettify.js"></script>
         <script>
